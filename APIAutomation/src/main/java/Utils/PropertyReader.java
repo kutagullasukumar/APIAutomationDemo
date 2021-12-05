@@ -23,8 +23,8 @@ public Properties props = new Properties();
 	public Properties readProperties() {
 		
 		try {
-			props.load(new FileInputStream(System.getProperty("user.dir") + "\\Resources\\endpoints.properties"));
-			props.load(new FileInputStream(System.getProperty("user.dir") + "\\Resources\\TestData.properties"));
+			props.load(new FileInputStream(System.getProperty("user.dir") + "/Resources/endpoints.properties"));
+			props.load(new FileInputStream(System.getProperty("user.dir") + "/Resources/TestData.properties"));
 			LOGGER.log(Level.INFO, "Reading data from properties file");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
